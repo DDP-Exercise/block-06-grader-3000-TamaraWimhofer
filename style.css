@@ -1,0 +1,97 @@
+/* Globale Stile und Zentrierung auf der gesamten Seite */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Der Wrapper sorgt dafür, dass der Inhalt horizontal und vertikal zentriert wird */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Der Container nimmt jetzt die volle verfügbare Breite bis zu einem großzügigen Maximum an */
+.container {
+    width: 100%;
+    max-width: 900px; /* Erhöht, damit sich die Formularelemente breiter auffächern */
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.streichergebnis {
+    background-color: #ffe6e6;
+    text-decoration: line-through;
+    color: #777;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+}
+
+.negative {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.positive {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.alert-box {
+    padding: 12px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
