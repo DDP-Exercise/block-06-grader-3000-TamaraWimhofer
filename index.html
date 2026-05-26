@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grader 3000</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <h1>Grader 3000 🎓</h1>
+        <form id="grader-form">
+            <h2>Übungsaufgaben (0-100 Punkte)</h2>
+            <div id="exercises-container"></div>
+
+            <h2>Klausur & Anwesenheit</h2>
+            <div id="exam-container"></div>
+            <div id="attendance-container"></div>
+        </form>
+
+        <div id="result">
+            <h3>Ergebnis:</h3>
+            <div id="summary-text"></div>
+            <div id="reasons-container"></div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="controller.js"></script>
+</body>
+</html>
